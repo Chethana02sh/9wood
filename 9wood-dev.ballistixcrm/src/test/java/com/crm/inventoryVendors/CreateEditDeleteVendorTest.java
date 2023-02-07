@@ -15,7 +15,7 @@ import com.crm.inventoryVendorObjectRepo.VendorVerifyPage;
 
 public class CreateEditDeleteVendorTest extends BaseClass{
 
-	@Test
+	@Test(retryAnalyzer = com.crm.genericUtilities.RetryAnalyserImptn.class)
 	public void createEditDeleteVendorTest() throws Throwable
 	{
 		int randNum = jLib.getRandomNumber();

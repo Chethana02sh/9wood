@@ -15,7 +15,7 @@ import com.crm.genericUtilities.BaseClass;
 
 public class CreateEditDeleteSalesContactTest extends BaseClass{
 	
-	@Test
+	@Test(retryAnalyzer = com.crm.genericUtilities.RetryAnalyserImptn.class)
 	public void createEditDeleteSalesContactTest() throws Throwable
 	{
 		int randNum = jLib.getRandomNumber();

@@ -15,7 +15,7 @@ import com.crm.campaignObjectRepository.MenuPage;
 import com.crm.genericUtilities.BaseClass;
 
 public class CreateEditDeleteOpportunity extends BaseClass{
-@Test
+@Test(retryAnalyzer = com.crm.genericUtilities.RetryAnalyserImptn.class)
 	public void createEditDeleteOpportunity() throws Throwable
 	{
 	WebElement ele = driver.findElement(By.xpath("//a[@title='Menu']"));

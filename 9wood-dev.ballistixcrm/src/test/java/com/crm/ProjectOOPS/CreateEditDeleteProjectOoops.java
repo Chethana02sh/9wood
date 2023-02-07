@@ -16,7 +16,7 @@ import com.crm.projectOOPSObjectRepo.ProjectOopspage;
 
 public class CreateEditDeleteProjectOoops extends BaseClass{
 
-	@Test
+	@Test(retryAnalyzer = com.crm.genericUtilities.RetryAnalyserImptn.class)
 	public void createEditDeleteProjectOoops() throws Throwable
 	{
 		WebElement ele = driver.findElement(By.xpath("//a[@title='Menu']"));

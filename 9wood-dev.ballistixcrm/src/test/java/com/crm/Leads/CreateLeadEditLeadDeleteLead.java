@@ -14,7 +14,7 @@ import com.crm.campaignObjectRepository.MenuPage;
 import com.crm.genericUtilities.BaseClass;
 
 public class CreateLeadEditLeadDeleteLead extends BaseClass{
-@Test
+@Test(retryAnalyzer = com.crm.genericUtilities.RetryAnalyserImptn.class)
 public void createLeadEditLeadDeleteLead() throws Throwable
 {
 
